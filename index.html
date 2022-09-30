@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="utf-8">
+    <title>Laboratory work №1</title>
+    <style>
+        @import url("./style.css");
+    </style>
+</head>
+<body>
+<header class="header">
+    <h1>Лабораторная работа №1, Вариант - 1912</h1>
+    <p>Мюгриев Даниил, P32151</p>
+</header>
+<form class="validateForm" action="server.php" method="GET">
+    <table id="form" class="wrapper">
+        <thead>
+        <td colspan="5"><h3>Hit Checker</h3></td>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Select X:</td>
+            <td>
+                <select id="x-value-select" name="x-in">
+                    <option value="-3">-3</option>
+                    <option value="-2">-2</option>
+                    <option value="-1">-1</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </td>
+            <td rowspan="3" class="graphic">
+                <svg>
+                    <line x1="0" y1="150"
+                          x2="300" y2="150"
+                          stroke="#000720"/>
+                    <line x1="150" y1="0"
+                          x2="150" y2="300"
+                          stroke="#000720"/>
+                    <line x1="270" y1="148"
+                          x2="270" y2="152"
+                          stroke="#000720"/>
+                    <text x="265" y="140">R</text>
+                    <line x1="210" y1="148"
+                          x2="210" y2="152"
+                          stroke="#000720"/>
+                    <text x="200" y="140">R/2</text>
+                    <line x1="90" y1="148"
+                          x2="90" y2="152"
+                          stroke="#000720"/>
+                    <text x="75" y="140">-R/2</text>
+                    <line x1="30" y1="148"
+                          x2="30" y2="152"
+                          stroke="#000720"/>
+                    <text x="20" y="140">-R</text>
+                    <line x1="148" y1="30"
+                          x2="152" y2="30"
+                          stroke="#000720"/>
+                    <text x="156" y="35">R</text>
+                    <line x1="148" y1="90"
+                          x2="152" y2="90"
+                          stroke="#000720"/>
+                    <text x="156" y="95">R/2</text>
+                    <line x1="148" y1="210"
+                          x2="152" y2="210"
+                          stroke="#000720"/>
+                    <text x="156" y="215">-R/2</text>
+                    <line x1="148" y1="270"
+                          x2="152" y2="270"
+                          stroke="#000720"/>
+                    <text x="156" y="275">-R</text>
+                    <polygon points="300,150 295,155 295, 145" fill="#000720" stroke="#000720"/>
+                    <polygon points="150,0 145,5 155,5"
+                             fill="#000720"
+                             stroke="#000720"/>
+                    <polygon class="triangle"
+                             points="150,150 210,150 150,90"/>
+                    <path class="quarter" d="M 30 150
+                    Q 30 30 150 30
+                    L 150 150
+                    Z"/>
+                    <rect class="rectangle"
+                          x="90" y="150"
+                          width="60" height="120"/>
+                    <circle id="pointer" r="5"
+                            cx="150" cy="150"
+                            fill="#AFFF57"
+                            stroke="#1C1C1C"
+                            visibility=""/>
+                </svg>
+            </td>
+        </tr>
+        <tr>
+            <td>Select Y:</td>
+            <td><input name="y-in"
+                       type="text"
+                       class="input-text"
+                       size="25"
+                       required
+                       maxlength="5"
+                       placeholder="Y ∈ (-3; 3)"></td>
+        </tr>
+        <tr>
+            <td>Select R:</td>
+            <td class="input-box">
+                <input type="radio" name="r-in" id="radio1" value="1">
+                <label for="radio1">1</label>
+                <input type="radio" name="r-in" id="radio2" value="1.5">
+                <label for="radio2">1.5</label>
+                <br>
+                <input type="radio" name="r-in" id="radio3" value="2">
+                <label for="radio3">2</label>
+                <input type="radio" name="r-in" id="radio4" value="2.5">
+                <label for="radio4">2.5</label>
+                <br>
+                <input type="radio" name="r-in" id="radio5" value="3">
+                <label for="radio5">3</label>
+            </td>
+        </tr>
+        <tr><td colspan="3">
+            <button id="checkButton" type="button" class="form-button">Check</button>
+        </td></tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6" id="output">
+                    <h4>
+                        <span class="notification">There are no results.</span>
+                    </h4>
+                </td>
+            </tr>
+    </table>
+</form>
+<footer class="footer">
+    <p>© 2022, Университет ИТМО, факультет ПИиКТ, бывшая кафедра ВТ</p>
+</footer>
+<script src="validator.js"></script>
+</body>
+</html>

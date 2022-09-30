@@ -1,0 +1,159 @@
+* {
+    text-align: center;
+    font-weight: normal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*Селекторы псевдо-классов*/
+.form-button:hover {
+    opacity: 1;
+    background-color: #C1EEF5;
+}
+
+.selection-cell:active {
+    color: bisque;
+    background: #bebabb;
+}
+/*Селекторы элементов*/
+footer, header {
+    font-family: monospace;
+    justify-content: center;
+    padding: 3px;
+}
+
+.form-button {
+    padding: 1% 2%;
+    border: gainsboro;
+    text-align: center;
+    font-size: 14px;
+    margin: 2px 1px;
+    opacity: 0.7;
+    transition: 0.15s;
+    border-collapse: collapse;
+    border-radius: 6px 6px 6px 6px;
+}
+
+#form, .result-table {
+    width: 700px;
+    margin: 5px auto 170px auto;
+    padding: 10px;
+    background: #ffffff;
+    border-collapse: collapse;
+    border-radius: 9px 9px 9px 9px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.selection-cell {
+    align: center;
+}
+
+select {
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0 5px 10px #e1e5ee;
+    background-color: white;
+    text-align: left;
+    overflow: hidden;
+}
+
+thead {
+    box-shadow: 0 3px 5px #e1e5ee;
+}
+
+th {
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+
+td {
+    padding: 1rem 2rem;
+}
+
+#outputTable tbody tr:nth-of-type(even) {
+    background-color: #f2f2f2;
+}
+
+#outputTable {
+    border-collapse: collapse;
+    border-radius: 9px 9px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#outputTable tbody tr:last-of-type {
+    border-bottom: 2px solid #10B1C9;
+}
+
+button {
+    cursor: pointer;
+}
+select, .input-text {
+    margin: 10% 0;
+    padding: 1%;
+}
+
+label {
+    margin: 1%;
+}
+
+/*Селекторы дочерних элементов*/
+footer > p {
+    color: darkgray;
+}
+/*Селекторы атрибутов*/
+input[type=button], input[type=radio] {
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+}
+
+input[type=button], input[type=text] { width: 90% }
+/*Свойство наследования*/
+body {
+    font-family: Mukta, sans-serif;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: #4f546c;
+    font-size: 0.9rem;
+    background-color: #f9fbff;
+}
+/*Свойство каскадирования*/
+footer {
+    background-color: #1C1C1C;
+    display: flex;
+    color: #bebabb;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+/*css for figure*/
+
+.graphic .rectangle {
+    fill: #10B1C9;
+    stroke: #0F0F0F;
+    fill-opacity: 0.3;
+}
+.graphic .triangle {
+    fill: #10B1C9;
+    stroke: #0F0F0F;
+    fill-opacity: 0.3;
+}
+.graphic .quarter {
+    fill: #10B1C9;
+    stroke: #0F0F0F;
+    fill-opacity: 0.3;
+}
+.graphic svg {
+    height: 300px;
+    width: 300px;
+}
